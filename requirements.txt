@@ -1,9 +1,9 @@
-altair
-pandas
 streamlit==1.44.0
+altair==4.2.2
+pandas==2.2.2
+numpy==1.26.4
 pillow==11.2.1
 matplotlib==3.9.4
 opencv-python==4.11.0.86
 tensorflow==2.18.0
-tensorflow_hub==0.16.1
-numpy==1.26.4
+tensorflow-hub==0.16.1
