@@ -10,8 +10,10 @@ def run():
     st.title('Exploratory Data Analysis')
 
     st.markdown('EDA akan difokuskan untuk menganalisis karakteristik dari gambar-gambar kebakaran hutan dan tidak, sehingga dapat memberikan pemahaman awal mengenai pola visual yang membedakan keduanya')
-    tranval_fire = glob.glob("Training and Validation/fire/*")
-    tranval_nofire = glob.glob("Training and Validation/nofire/*")
+    # tranval_fire = glob.glob("Training and Validation/fire/*")
+    # tranval_nofire = glob.glob("Training and Validation/nofire/*")
+    tranval_fire = sorted(glob.glob("Training and Validation/fire/*"))
+    tranval_nofire = sorted(glob.glob("Training and Validation/nofire/*"))
 
     fields = ['Bagaimana distribusi data training dan validation ?', 'Bagaimana distribusi ukuran gambar ?',
               'Bagaimana contoh gambar kelas fire dan no fire ?', 'Bagaimana distribusi warna kelas fire dan no fire ?',
