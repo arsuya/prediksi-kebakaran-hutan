@@ -89,7 +89,7 @@ def run():
 
     elif pilihan == fields[3]:
         st.subheader('- Bagaimana distribusi warna kelas fire dan no fire ?')
-        st.markdown('Analisis berikutnya mengidentifikasi apakah terdapat pola warna yang khas yang dapat membedakan antar kelas. Analisis ini bertujuan untuk mengidentifikasi apakah terdapat pola warna yang khas yang dapat membedakan antara kelas fire dan no fire')
+        st.markdown('Analisis berikutnya mengidentifikasi apakah terdapat pola warna yang khas yang dapat membedakan antar kelas')
         st.markdown('Visualisasi dilakukan dengan membuat boxplot atau histogram RGB untuk masing-masing kelas, guna mengetahui sebaran intensitas pixel pada warna red, green, dan blue, serta mendeteksi adanya dominasi warna tertentu di masing-masing kategori. Gambar yang digunakan dalam analisis ini adalah gambar yang sama seperti pada langkah EDA sebelumnya')
 
         def get_rgb_flattened(img_path):
@@ -117,7 +117,7 @@ def run():
 
         st.pyplot(fig)
 
-        st.markdown('Hasilnya,  Pada gambar kelas fire, distribusi warna merah cenderung memiliki median dan rentang IQR yang lebih tinggi dibandingkan warna lainnya. Hal ini mengindikasikan bahwa warna merah mendominasi pada gambar kebakaran')
+        st.markdown('Hasilnya, Pada gambar kelas fire, distribusi warna merah cenderung memiliki median dan rentang IQR yang lebih tinggi dibandingkan warna lainnya. Hal ini mengindikasikan bahwa warna merah mendominasi pada gambar kebakaran')
         st.markdown('Sebaliknya, pada gambar kelas no fire, warna hijau menunjukkan distribusi yang lebih tinggi dan luas, dengan median yang juga lebih besar dibanding channel lainnya. Ini mencerminkan keberadaan pepohonan yang cenderung berwarna hijau')
 
     if pilihan == fields[4]:
